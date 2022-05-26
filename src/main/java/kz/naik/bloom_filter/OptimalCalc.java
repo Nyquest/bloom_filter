@@ -14,7 +14,7 @@ public class OptimalCalc {
         long optimalBitCount = CalcUtils.optimalBitCount(TOTAL_COUNT, ERROR_PROBABILITY); // 191_701_168
         long optimalBitCountWithAlignment = CalcUtils.optimalBitCountWithAlignment(TOTAL_COUNT, ERROR_PROBABILITY); // 268_435_456
         long hashFunctionCount = CalcUtils.hashFunctionCount(TOTAL_COUNT, optimalBitCountWithAlignment); // 10
-        double errorProbability = CalcUtils.errorProbability(TOTAL_COUNT, optimalBitCountWithAlignment, 12);
+        double errorProbability = CalcUtils.errorProbability(TOTAL_COUNT, optimalBitCountWithAlignment, 12); // 0.0018
         __("optimalBitCount", optimalBitCount);
         __("optimalBitCountWithAlignment", optimalBitCountWithAlignment);
         __("hashFunctionCount", hashFunctionCount);

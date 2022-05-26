@@ -45,6 +45,10 @@ public class Main {
                 if(!set.contains(randomIin)) {
                     ++errors;
                 }
+            } else {
+                if(set.contains(randomIin)) {
+                    throw new RuntimeException("Incorrect implementation");
+                }
             }
         }
         __("errors", errors);
